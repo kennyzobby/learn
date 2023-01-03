@@ -11,7 +11,8 @@ Shell Topics:
 6. Exist Status
 7. Inputs
 8. Quotes
-
+9. Redirectors
+10. SED Editor
 
 
 
