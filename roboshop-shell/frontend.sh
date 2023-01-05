@@ -1,8 +1,6 @@
 current_directory=$(pwd)
 
 yum install nginx -y
-systemctl enable nginx
-systemctl start nginx
 rm -rf /usr/share/nginx/html/*
 
 curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.zip
@@ -11,6 +9,8 @@ unzip /tmp/frontend.zip
 
 cp $current_directory/files/nginx-roboshop.conf /etc/nginx/default.d/roboshop.conf
 
+
+systemctl enable nginx
 systemctl restart nginx
 
 
